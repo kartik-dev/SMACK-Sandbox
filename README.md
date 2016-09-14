@@ -1,4 +1,4 @@
-Vagrant for Hadoop, Spark and Hive
+Vagrant for SMACK Stack
 ==================================
 
 # Introduction
