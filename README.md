@@ -1,4 +1,4 @@
-Vagrant for SMACK Stack
+Vagrant for SMACK (Spark, Mesos, Akka, Cassandra and Kafka) Stack
 ==================================
 
 # Introduction
@@ -10,6 +10,7 @@ Vagrant project to spin up a single virtual machine running:
 * Pig 0.16.0
 * Spark 1.6.0
 * Confluent-io 
+* Apache Zepplin 0.6
 
 The virtual machine will be running the following services:
 
