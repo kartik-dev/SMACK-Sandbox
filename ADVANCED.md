@@ -1,4 +1,4 @@
-Additional virtual machine details
+Advanced virtual machine details
 ==================================
 
 
@@ -13,12 +13,12 @@ Additional virtual machine details
 
 SSH into your VM:
 
-```vagrant ssh```
+`vagrant ssh`
 
 This will log you in as the `vagrant` user.
 For root access run the following:
 
-```sudo su -```
+`sudo su -`
 
 Hadoop and friends are all installed under `/usr/local`.
 
@@ -52,4 +52,3 @@ A list of available Vagrant boxes is shown at http://www.vagrantbox.es.
 
 # Vagrant box location
 The Vagrant box is downloaded to the ~/.vagrant.d/boxes directory. On Windows, this is C:/Users/{your-username}/.vagrant.d/boxes.
-

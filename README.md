@@ -1,7 +1,7 @@
 Vagrant for SMACK (Spark, Mesos, Akka, Cassandra and Kafka) Stack
 ==================================
 
-# Introduction
+#### Introduction
 
 Vagrant project to spin up a single virtual machine running:
 
@@ -19,7 +19,7 @@ The virtual machine will be running the following services:
 * Hive metastore and server2
 * Spark history server
 
-# Web user interfaces
+#### Web user interfaces
 
 Here are some useful links to navigate to various UI's:
 
@@ -29,7 +29,7 @@ Here are some useful links to navigate to various UI's:
 * Spark history server: (http://191.168.0.50:18080)
 * Spark context UI (if a Spark context is running): (http://191.168.0.50:4040)
 
-# Setup Pig manually (Need to automate)
+##### Setup Pig manually (Need to automate)
 
 cd /home/vagrant
 
