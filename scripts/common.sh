@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # java
 JAVA_ARCHIVE=jdk-8u51-linux-x64.gz
 
@@ -17,7 +18,7 @@ HIVE_MIRROR_DOWNLOAD=http://archive.apache.org/dist/hive/$HIVE_VERSION/$HIVE_ARC
 HIVE_RES_DIR=/vagrant/resources/hive
 HIVE_CONF=/usr/local/hive/conf
 
-# spark
+# spark 
 SPARK_VERSION=spark-2.0.0
 SPARK_ARCHIVE=$SPARK_VERSION-bin-hadoop2.7.tgz
 SPARK_MIRROR_DOWNLOAD=http://d3kbcqa49mib13.cloudfront.net/$SPARK_VERSION-bin-hadoop2.7.tgz
@@ -54,19 +55,19 @@ RES_SSH_CONFIG=$SSH_RES_DIR/config
 function resourceExists {
 	FILE=/vagrant/resources/$1
 	if [ -e $FILE ]
-		then
-			return 0
-		else
-			return 1
-		fi
-	}
-	
+	then
+		return 0
+	else
+		return 1
+	fi
+}
+
 function fileExists {
 	FILE=$1
 	if [ -e $FILE ]
-		then
+	then
 		return 0
-		else
-			return 1
-		fi
+	else
+		return 1
+	fi
 }

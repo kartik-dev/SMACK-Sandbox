@@ -1,9 +1,8 @@
 #!/bin/bash
 
-
 function setupUtilities {
-    # update the locate database
-    updatedb
+	# update the locate database
+	updatedb
 }
 
 echo "finalize centos"
