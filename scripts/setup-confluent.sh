@@ -17,7 +17,7 @@ function installConfluent {
 		else
 			installRemoteConfluent
 			fi
-	ln -s /usr/local/$confluent_VERSION /usr/local/confluent
+	ln -s /usr/local/$CONFLUENT_VERSION /usr/local/confluent
 	mkdir -p /usr/local/confluent/logs
 }
 

@@ -26,11 +26,11 @@ SPARK_RES_DIR=/vagrant/resources/spark
 SPARK_CONF_DIR=/usr/local/spark/conf
 
 # Zepplin
-ZEPPLIN_VERSION=zepplin-0.6.1
-ZEPPLIN_ARCHIVE=$ZEPPLIN_VERSION-bin-all.tgz
-ZEPPLIN_MIRROR_DOWNLOAD=http://mirror.synyx.de/apache/zeppelin/zeppelin-0.6.1/$ZEPPLIN_VERSION-bin-all.tgz
-ZEPPLIN_RES_DIR=/vagrant/resources/zepplin
-ZEPPLIN_CONF_DIR=/usr/local/zepplin/conf
+ZEPPELIN_VERSION=zeppelin-0.6.1
+ZEPPELIN_ARCHIVE=$ZEPPELIN_VERSION-bin-all.tgz
+ZEPPELIN_MIRROR_DOWNLOAD=http://mirror.synyx.de/apache/zeppelin/zeppelin-0.6.1/$ZEPPELIN_VERSION-bin-all.tgz
+ZEPPELIN_RES_DIR=/vagrant/resources/zeppelin
+ZEPPELIN_CONF_DIR=/usr/local/zeppelin/conf
 
 # nifi
 NIFI_VERSION=nifi-1.0.0

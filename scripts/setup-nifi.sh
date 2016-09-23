@@ -20,7 +20,7 @@ function installnifi {
 		else
 			installRemotenifi
 			fi
-	ln -s /usr/local/$NIFI_VERSION-bin /usr/local/nifi
+	ln -s /usr/local/$NIFI_VERSION /usr/local/nifi
 	mkdir -p /usr/local/nifi/logs
 }
 function startServices {
