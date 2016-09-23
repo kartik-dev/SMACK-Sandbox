@@ -1,5 +1,4 @@
 #!/bin/bash
-
 source "/vagrant/scripts/common.sh"
 
 function installLocalZepplin {
@@ -17,9 +16,9 @@ function installRemoteZepplin {
 function installZepplin {
 	if resourceExists $ZEPPLIN_ARCHIVE; then
 		installLocalZepplin
-	else
-		installRemoteZepplin
-	fi
+		else
+			installRemoteZepplin
+			fi
 	ln -s /usr/local/$ZEPPLIN_VERSION-bin-all /usr/local/zepplin
 	mkdir -p /usr/local/zepplin/logs
 }
@@ -30,8 +29,6 @@ function startServices {
 }
 
 echo "setup Zepplin"
-
 installZepplin
 startServices
-
 echo "Zepplin setup complete"

@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # java
 JAVA_ARCHIVE=jdk-8u51-linux-x64.gz
 
@@ -55,19 +54,19 @@ RES_SSH_CONFIG=$SSH_RES_DIR/config
 function resourceExists {
 	FILE=/vagrant/resources/$1
 	if [ -e $FILE ]
-	then
-		return 0
-	else
-		return 1
-	fi
-}
-
+		then
+			return 0
+		else
+			return 1
+		fi
+	}
+	
 function fileExists {
 	FILE=$1
 	if [ -e $FILE ]
-	then
+		then
 		return 0
-	else
-		return 1
-	fi
+		else
+			return 1
+		fi
 }
