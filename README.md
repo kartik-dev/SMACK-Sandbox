@@ -19,6 +19,9 @@ The virtual machine will be running the following services:
 * YARN ResourceManager + JobHistoryServer + ProxyServer
 * Hive metastore and server2
 * Spark history server
+* Zeppelin
+* NIFI
+* Cassandra
 
 #### Web user interfaces
 
