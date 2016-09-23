@@ -23,7 +23,7 @@ function setupHosts {
 }
 
 function installSSHPass {
-	yum -y install sshpass
+	yum -y install sshpass nss
 }
 
 function overwriteSSHCopyId {

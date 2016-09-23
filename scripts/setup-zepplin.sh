@@ -26,7 +26,7 @@ function installZeppelin {
 
 function startServices {
 	echo "starting Zepplin service"
-	/usr/local/zeppelin/sbin/zeppelin-deamon.sh start
+	/usr/local/zeppelin/bin/zeppelin-deamon.sh start
 }
 
 echo "setup Zeppelin"

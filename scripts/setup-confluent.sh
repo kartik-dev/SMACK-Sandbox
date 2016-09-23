@@ -17,10 +17,18 @@ function installConfluent {
 		else
 			installRemoteConfluent
 			fi
-	ln -s /usr/local/$CONFLUENT_VERSION /usr/local/confluent
+	ln -s /usr/local/confluent-3.0.1 /usr/local/confluent
 	mkdir -p /usr/local/confluent/logs
+}
+
+function startServices {
+	echo "starting nifi service"
+	/usr/local/confluent/bin/zookeeper-server-start /usr/local/confluent/etc/kafka/zookeeper.properties &
+	/usr/local/confluent/bin/kafka-server-start /usr/local/confluent/etc/kafka/server.properties &
+	/usr/local/confluent/bin/schema-registry-start /usr/local/confluent/etc/schema-registry/schema-registry.properties &
 }
 
 echo "setup confluent"
 installConfluent
+startServices
 echo "confluent install complete"
