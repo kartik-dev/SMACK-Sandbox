@@ -24,12 +24,18 @@ function installZeppelin {
 	mkdir -p /usr/local/zeppelin/logs
 }
 
+function setupZeppelin {
+	echo "setup zeppelin"
+	cp -f /vagrant/resources/zeppelin/zeppelin-site.xml /usr/local/zeppelin/conf
+}
+
 function startServices {
 	echo "starting Zepplin service"
-	/usr/local/zeppelin/bin/zeppelin-deamon.sh start
+	/usr/local/zeppelin/bin/zeppelin-daemon.sh start
 }
 
 echo "setup Zeppelin"
 installZeppelin
+setupZeppelin
 startServices
 echo "Zeppelin setup complete"

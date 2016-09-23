@@ -20,6 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         smack.vm.provision "shell", path: "scripts/setup-zepplin.sh"
         smack.vm.provision "shell", path: "scripts/setup-nifi.sh"
         smack.vm.provision "shell", path: "scripts/setup-confluent.sh"
+		smack.vm.provision "shell", path: "scripts/setup-cassandra.sh"
         smack.vm.provision "shell", path: "scripts/finalize-centos.sh"
     end
 end

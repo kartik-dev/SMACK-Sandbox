@@ -46,6 +46,13 @@ CONFLUENT_MIRROR_DOWNLOAD=http://packages.confluent.io/archive/3.0/$CONFLUENT_VE
 CONFLUENT_RES_DIR=/vagrant/resources/confluent
 CONFLUENT_CONF_DIR=/usr/local/confluent/conf
 
+# Confluent
+CASSANDRA_VERSION=apache-cassandra-3.7
+CASSANDRA_ARCHIVE=apache-$CASSANDRA_VERSION-bin.tar.gz
+CASSANDRA_MIRROR_DOWNLOAD=http://mirror2.shellbot.com/apache/cassandra/3.7/apache-cassandra-3.7-bin.tar.gz
+CASSANDRA_RES_DIR=/vagrant/resources/cassandra
+CASSANDRA_CONF_DIR=/usr/local/cassandra/conf
+
 # ssh
 SSH_RES_DIR=/vagrant/resources/ssh
 RES_SSH_COPYID_ORIGINAL=$SSH_RES_DIR/ssh-copy-id.original
