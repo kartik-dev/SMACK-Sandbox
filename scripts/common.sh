@@ -19,11 +19,32 @@ HIVE_RES_DIR=/vagrant/resources/hive
 HIVE_CONF=/usr/local/hive/conf
 
 # spark
-SPARK_VERSION=spark-1.6.0
-SPARK_ARCHIVE=$SPARK_VERSION-bin-hadoop2.tgz
-SPARK_MIRROR_DOWNLOAD=http://archive.apache.org/dist/spark/$SPARK_VERSION/$SPARK_VERSION-bin-hadoop2.6.tgz
+SPARK_VERSION=spark-2.0.0
+SPARK_ARCHIVE=$SPARK_VERSION-bin-hadoop2.7.tgz
+SPARK_MIRROR_DOWNLOAD=http://d3kbcqa49mib13.cloudfront.net/$SPARK_VERSION-bin-hadoop2.7.tgz
 SPARK_RES_DIR=/vagrant/resources/spark
 SPARK_CONF_DIR=/usr/local/spark/conf
+
+# Zepplin
+ZEPPLIN_VERSION=zepplin-0.6.1
+ZEPPLIN_ARCHIVE=$ZEPPLIN_VERSION-bin-all.tgz
+ZEPPLIN_MIRROR_DOWNLOAD=http://mirror.synyx.de/apache/zeppelin/zeppelin-0.6.1/$ZEPPLIN_VERSION-bin-all.tgz
+ZEPPLIN_RES_DIR=/vagrant/resources/zepplin
+ZEPPLIN_CONF_DIR=/usr/local/zepplin/conf
+
+# nifi
+NIFI_VERSION=nifi-1.0.0
+NIFI_ARCHIVE=$NIFI_VERSION-bin.tar.gz
+NIFI_MIRROR_DOWNLOAD=https://www.apache.org/dyn/closer.lua?path=/nifi/1.0.0/$NIFI_VERSION-bin.tar.gz
+NIFI_RES_DIR=/vagrant/resources/nifi
+NIFI_CONF_DIR=/usr/local/nifi/conf
+
+# Confluent
+CONFLUENT_VERSION=confluent-3.0.1-2.11
+CONFLUENT_ARCHIVE=$CONFLUENT_VERSION.tar.gz
+CONFLUENT_MIRROR_DOWNLOAD=http://packages.confluent.io/archive/3.0/$CONFLUENT_VERSION.tar.gz
+CONFLUENT_RES_DIR=/vagrant/resources/confluent
+CONFLUENT_CONF_DIR=/usr/local/confluent/conf
 
 # ssh
 SSH_RES_DIR=/vagrant/resources/ssh

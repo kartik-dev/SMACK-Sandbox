@@ -17,6 +17,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         node.vm.provision "shell", path: "scripts/setup-hadoop.sh"
         node.vm.provision "shell", path: "scripts/setup-hive.sh"
         node.vm.provision "shell", path: "scripts/setup-spark.sh"
+        node.vm.provision "shell", path: "scripts/setup-zepplin.sh"
+        node.vm.provision "shell", path: "scripts/setup-nifi.sh"
+        node.vm.provision "shell", path: "scripts/setup-confluent.sh"
         node.vm.provision "shell", path: "scripts/finalize-centos.sh"
     end
 end

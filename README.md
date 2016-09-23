@@ -7,10 +7,10 @@ Vagrant project to spin up a single virtual machine running:
 
 * Hadoop 2.7.2
 * Hive 1.2.1
-* Pig 0.16.0
-* Spark 1.6.0
-* Confluent-io 
-* Apache Zepplin 0.6
+* Spark 2.0.0
+* Confluent-io 3.0.0_2.11 platform 
+* Zepplin 0.6.1
+* nifi 1.0.0
 
 The virtual machine will be running the following services:
 
