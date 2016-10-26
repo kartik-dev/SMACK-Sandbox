@@ -4,8 +4,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     i = 1
     config.vm.define "smack#{i}" do |smack|
-        smack.vm.box = "centos65"
-        smack.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.5.1/centos65-x86_64-20131205.box"
+        smack.vm.box = "bento/centos-7.1"
         smack.vm.provider "virtualbox" do |v|
           v.name = "smack#{i}"
           v.customize ["modifyvm", :id, "--memory", "6144"]

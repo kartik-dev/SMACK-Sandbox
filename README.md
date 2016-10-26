@@ -10,7 +10,7 @@ Vagrant project to spin up a single virtual machine running:
 * Spark 2.0.0
 * Confluent-io 3.0.0_2.11 platform 
 * Apache Zeppelin 0.6.1
-* Apache NIFI 1.0.0
+* Apache NiFi 1.0.0
 * Cassandra 3.7
 
 The virtual machine will be running the following services:
@@ -20,7 +20,7 @@ The virtual machine will be running the following services:
 * Hive metastore and server2
 * Spark history server
 * Zeppelin
-* NIFI
+* NiFi
 * Cassandra
 
 #### Web user interfaces
@@ -33,4 +33,4 @@ Here are some useful links to navigate to various UI's:
 * Spark history server: (http://192.168.0.50:18080)
 * Spark context UI (if a Spark context is running): (http://192.168.0.50:4040)
 * Zeppelin UI: (http://192.168.0.50:8889)
-* NIFI UI: (http://192.168.0.50:8080)
+* NiFi UI: (http://192.168.0.50:8080/nifi)

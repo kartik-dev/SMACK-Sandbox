@@ -16,11 +16,9 @@ nohup hive --service hiveserver2 < /dev/null > /usr/local/hive/logs/hive_server2
 
 /usr/local/zeppelin/bin/zeppelin-daemon.sh start
 
-
 -- Kafka
 -- create topic
-/usr/local/confluent/bin/kafka-topics --zookeeper 192.168.0.50:2181 --create --topic clicklog --partitions 1 --replication-factor 1
-
+/usr/local/confluent/bin/kafka-topics --zookeeper 192.168.0.50:2181 --create --topic jsonLog --partitions 1 --replication-factor 1
 
 curl -X GET -i http://192.168.0.50:8081/subjects
 

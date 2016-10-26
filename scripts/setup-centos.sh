@@ -12,12 +12,9 @@ function disableFirewall {
 
 function setupHosts {
 	echo "modifying /etc/hosts file"
-#    entry="10.211.55.101 node1"
-#    echo "adding ${entry}"
-#    echo "${entry}" >> /etc/nhosts
 	echo "127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4" >> /etc/nhosts
 	echo "::1         localhost localhost.localdomain localhost6 localhost6.localdomain6" >> /etc/nhosts
-	#cat /etc/hosts >> /etc/nhosts
+
 	cp /etc/nhosts /etc/hosts
 	rm -f /etc/nhosts
 }
@@ -43,6 +40,11 @@ function setupUtilities {
     updatedb
 }
 
+function installDocker {
+	yum -y install docker-io
+	service docker start
+}
+
 echo "setup centos"
 disableFirewall
 
@@ -56,5 +58,8 @@ overwriteSSHCopyId
 
 echo "setup utilities"
 setupUtilities
+
+echo "setup docker"
+installDocker
 
 echo "centos setup complete"
