@@ -22,7 +22,7 @@ function installConfluent {
 }
 
 function startServices {
-	echo "starting nifi service"
+	echo "starting confluent service"
 	/usr/local/confluent/bin/zookeeper-server-start /usr/local/confluent/etc/kafka/zookeeper.properties &
 	/usr/local/confluent/bin/kafka-server-start /usr/local/confluent/etc/kafka/server.properties &
 	/usr/local/confluent/bin/schema-registry-start /usr/local/confluent/etc/schema-registry/schema-registry.properties &

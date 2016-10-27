@@ -18,7 +18,8 @@ function installCassandra {
 		else
 			installRemoteCassandra
 			fi
-	ln -s /usr/local/$CASSANDRA_VERSION-bin /usr/local/cassandra
+	ln -s /usr/local/$CASSANDRA_VERSION /usr/local/cassandra
+	export PATH=$PATH:/usr/local/cassandra/bin
 	mkdir -p /usr/local/cassandra/logs
 }
 

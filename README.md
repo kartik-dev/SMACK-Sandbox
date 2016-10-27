@@ -5,6 +5,7 @@ Vagrant for SMACK (Spark, Mesos, Akka, Cassandra and Kafka) Stack
 
 Vagrant project to spin up a single virtual machine running:
 
+* Mesos 1.0
 * Hadoop 2.7.2
 * Hive 1.2.1
 * Spark 2.0.0
@@ -27,6 +28,7 @@ The virtual machine will be running the following services:
 
 Here are some useful links to navigate to various UI's:
 
+* Mesos Master:  (http://192.168.0.50:5050)
 * YARN resource manager:  (http://192.168.0.50:8088)
 * Job history:  (http://192.168.0.50:19888/jobhistory/)
 * HDFS: (http://192.168.0.50:50070/dfshealth.html)
