@@ -36,7 +36,7 @@ function createSSHKey {
 
 function setupUtilities {
     # so the `locate` command works
-    yum install -y mlocate
+    yum install -y mlocate git maven
     updatedb
 }
 
