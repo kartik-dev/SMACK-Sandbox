@@ -21,11 +21,12 @@ function installCassandra {
 	ln -s /usr/local/$CASSANDRA_VERSION /usr/local/cassandra
 	export PATH=$PATH:/usr/local/cassandra/bin
 	mkdir -p /usr/local/cassandra/logs
+	cp -f /vagrant/resources/cassandra/cassandra.yaml /usr/local/cassandra/cassandra.yaml
 }
 
 function startServices {
 	echo "starting cassandra service"
-	/usr/local/cassandra/bin/cassandra -R &
+	/usr/local/cassandra/bin/cassandra -R
 }
 
 echo "setup cassandra"
