@@ -35,7 +35,7 @@ ZEPPELIN_CONF_DIR=/usr/local/zeppelin/conf
 # nifi
 NIFI_VERSION=nifi-1.0.0
 NIFI_ARCHIVE=$NIFI_VERSION-bin.tar.gz
-NIFI_MIRROR_DOWNLOAD=https://www.apache.org/dyn/closer.lua?path=/nifi/1.0.0/$NIFI_VERSION-bin.tar.gz
+NIFI_MIRROR_DOWNLOAD=http://mirror.yannic-bonenberger.com/apache/nifi/1.0.0/nifi-1.0.0-bin.tar.gz
 NIFI_RES_DIR=/vagrant/resources/nifi
 NIFI_CONF_DIR=/usr/local/nifi/conf
 
