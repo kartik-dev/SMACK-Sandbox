@@ -3,12 +3,12 @@
 source "/vagrant/scripts/common.sh"
 
 function installLocalCassandra {
-	echo "install Confluent from local file"
+	echo "install cassandra from local file"
 	FILE=/vagrant/resources/$CASSANDRA_ARCHIVE
 	tar -xzf $FILE -C /usr/local
 }
 function installRemoteCassandra {
-	echo "install Confluent from remote file"
+	echo "install cassandra from remote file"
 	curl -sS -o /vagrant/resources/$CASSANDRA_ARCHIVE -O -L $CASSANDRA_MIRROR_DOWNLOAD
 	tar -xzf /vagrant/resources/$CASSANDRA_ARCHIVE -C /usr/local
 }
@@ -26,7 +26,7 @@ function installCassandra {
 
 function startServices {
 	echo "starting cassandra service"
-	/usr/local/cassandra/bin/cassandra -R
+	/usr/local/cassandra/bin/cassandra -R &
 }
 
 echo "setup cassandra"

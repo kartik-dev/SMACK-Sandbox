@@ -34,7 +34,7 @@ ZEPPELIN_CONF_DIR=/usr/local/zeppelin/conf
 
 # nifi
 NIFI_VERSION=nifi-1.0.0
-NIFI_ARCHIVE=$NIFI_VERSION-bin.tar.gz
+NIFI_ARCHIVE=nifi-1.0.0-bin.tar.gz
 NIFI_MIRROR_DOWNLOAD=http://mirror.yannic-bonenberger.com/apache/nifi/1.0.0/nifi-1.0.0-bin.tar.gz
 NIFI_RES_DIR=/vagrant/resources/nifi
 NIFI_CONF_DIR=/usr/local/nifi/conf
@@ -46,9 +46,9 @@ CONFLUENT_MIRROR_DOWNLOAD=http://packages.confluent.io/archive/3.0/$CONFLUENT_VE
 CONFLUENT_RES_DIR=/vagrant/resources/confluent
 CONFLUENT_CONF_DIR=/usr/local/confluent/conf
 
-# Confluent
+# Cassandra
 CASSANDRA_VERSION=apache-cassandra-3.7
-CASSANDRA_ARCHIVE=apache-$CASSANDRA_VERSION-bin.tar.gz
+CASSANDRA_ARCHIVE=$CASSANDRA_VERSION-bin.tar.gz
 CASSANDRA_MIRROR_DOWNLOAD=http://mirror2.shellbot.com/apache/cassandra/3.7/apache-cassandra-3.7-bin.tar.gz
 CASSANDRA_RES_DIR=/vagrant/resources/cassandra
 CASSANDRA_CONF_DIR=/usr/local/cassandra/conf
